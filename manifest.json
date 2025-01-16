@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "DNS Guardian",
+  "version": "1.0",
+  "description": "Blocks requests to domains with different NS records from their parent domains",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["src/background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "DNS Guardian"
+  }
+}
